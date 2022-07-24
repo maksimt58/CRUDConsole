@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "firstName": "Maks",
+    "lastName": "Tata",
+    "posts": [
+      {
+        "id": 1,
+        "content": "this post is about life",
+        "created": {
+          "year": 2022,
+          "month": 7,
+          "day": 24
+        },
+        "updated": {
+          "year": 2022,
+          "month": 7,
+          "day": 24
+        },
+        "labels": [
+          {
+            "id": 1,
+            "nameLabel": "Java"
+          },
+          {
+            "id": 3,
+            "nameLabel": "Life"
+          }
+        ],
+        "postStatus": "ACTIVE"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "firstName": "Nata",
+    "lastName": "Tata",
+    "posts": [
+      {
+        "id": 2,
+        "content": "Post is about sport",
+        "created": {
+          "year": 2022,
+          "month": 7,
+          "day": 24
+        },
+        "updated": {
+          "year": 2022,
+          "month": 7,
+          "day": 24
+        },
+        "labels": [
+          {
+            "id": 3,
+            "nameLabel": "Life"
+          },
+          {
+            "id": 5,
+            "nameLabel": "Sport"
+          }
+        ],
+        "postStatus": "UNDER_REVIEW"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "firstName": "Daniel",
+    "lastName": "Defo",
+    "posts": [
+      {
+        "id": 4,
+        "content": "Tutorial SPring",
+        "created": {
+          "year": 2022,
+          "month": 7,
+          "day": 24
+        },
+        "updated": {
+          "year": 2022,
+          "month": 7,
+          "day": 24
+        },
+        "labels": [
+          {
+            "id": 1,
+            "nameLabel": "Java"
+          },
+          {
+            "id": 2,
+            "nameLabel": "SpringBoot"
+          },
+          {
+            "id": 7,
+            "nameLabel": "Spring Mvc"
+          }
+        ],
+        "postStatus": "UNDER_REVIEW"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "firstName": "Danil",
+    "lastName": "Medvedev",
+    "posts": [
+      {
+        "id": 3,
+        "content": "This post is about traveling",
+        "created": {
+          "year": 2022,
+          "month": 7,
+          "day": 24
+        },
+        "updated": {
+          "year": 2022,
+          "month": 7,
+          "day": 24
+        },
+        "labels": [
+          {
+            "id": 3,
+            "nameLabel": "Life"
+          },
+          {
+            "id": 6,
+            "nameLabel": "Travel"
+          }
+        ],
+        "postStatus": "DELETED"
+      }
+    ]
+  }
+]

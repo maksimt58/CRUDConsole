@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "nameLabel": "Java"
+  },
+  {
+    "id": 2,
+    "nameLabel": "SpringBoot"
+  },
+  {
+    "id": 3,
+    "nameLabel": "Life"
+  },
+  {
+    "id": 4,
+    "nameLabel": "Science"
+  },
+  {
+    "id": 5,
+    "nameLabel": "Sport"
+  },
+  {
+    "id": 6,
+    "nameLabel": "Travel"
+  },
+  {
+    "id": 7,
+    "nameLabel": "Spring Mvc"
+  }
+]
