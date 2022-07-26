@@ -73,7 +73,7 @@ public class JsonIOPostRepositoryImpl implements PostRepository {
         return Objects.nonNull(maxIdPost) ? maxIdPost.getId() + 1 : 1L;
     }
 
-    public void writeListToJson(List<? extends Model> tList) {
+    private void writeListToJson(List<? extends Model> tList) {
 
         try (FileWriter fileWriter = new FileWriter(filePosts.getAbsolutePath())) {
             if (!tList.isEmpty()) {
@@ -85,7 +85,7 @@ public class JsonIOPostRepositoryImpl implements PostRepository {
         }
     }
 
-    public void readFromJsonToListPost() {
+    private void readFromJsonToListPost() {
         Type listOfPostObject = new TypeToken<ArrayList<Post>>() {
         }.getType();
 

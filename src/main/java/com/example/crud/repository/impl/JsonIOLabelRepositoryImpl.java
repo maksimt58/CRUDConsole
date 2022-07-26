@@ -71,7 +71,7 @@ public class JsonIOLabelRepositoryImpl implements LabelRepository {
         return Objects.nonNull(maxIdLabel) ? maxIdLabel.getId() + 1 : 1L;
     }
 
-    public void writeListToJson(List<? extends Model> tList){
+    private void writeListToJson(List<? extends Model> tList){
 
         try(FileWriter fileWriter = new FileWriter(fileLabels.getAbsolutePath())){
             if (!tList.isEmpty()) {
@@ -83,7 +83,7 @@ public class JsonIOLabelRepositoryImpl implements LabelRepository {
         }
     }
 
-    public void readFromJsonToListLabel() {
+    private void readFromJsonToListLabel() {
         Type listOfLabelObject = new TypeToken<ArrayList<Label>>() {
         }.getType();
 

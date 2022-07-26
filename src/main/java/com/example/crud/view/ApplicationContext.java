@@ -10,7 +10,7 @@ import com.example.crud.repository.impl.JsonIOLabelRepositoryImpl;
 import com.example.crud.repository.impl.JsonIOPostRepositoryImpl;
 import com.example.crud.repository.impl.JsonIOWriterRepositoryImpl;
 
-public class BaseCrudRunner {
+public class ApplicationContext {
     public void loadContext() {
 
         LabelRepository labelRepository = new JsonIOLabelRepositoryImpl();

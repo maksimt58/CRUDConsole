@@ -75,7 +75,7 @@ public class JsonIOWriterRepositoryImpl implements WriterRepository {
         return Objects.nonNull(maxIdWriter) ? maxIdWriter.getId() + 1 : 1L;
     }
 
-    public void writeListToJson(List<? extends Model> tList) {
+    private void writeListToJson(List<? extends Model> tList) {
 
         try (FileWriter fileWriter = new FileWriter(fileWriters.getAbsolutePath())) {
             if (!tList.isEmpty()) {
@@ -87,7 +87,7 @@ public class JsonIOWriterRepositoryImpl implements WriterRepository {
         }
     }
 
-    public void readFromJsonToListWriter() {
+    private void readFromJsonToListWriter() {
         Type listOfWriterObject = new TypeToken<ArrayList<Writer>>() {
         }.getType();
 
