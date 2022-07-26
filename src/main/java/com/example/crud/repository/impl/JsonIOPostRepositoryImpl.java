@@ -57,11 +57,12 @@ public class JsonIOPostRepositoryImpl implements PostRepository {
     }
 
     @Override
-    public void save(Post post) {
+    public Post save(Post post) {
         List<Post> posts = getAllPostsInternal();
         post.setId(generateId(posts));
         posts.add(post);
         writeListToJson(posts);
+        return post;
     }
 
     private List<Post> getAllPostsInternal() {

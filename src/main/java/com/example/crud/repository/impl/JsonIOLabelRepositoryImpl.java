@@ -55,11 +55,12 @@ public class JsonIOLabelRepositoryImpl implements LabelRepository {
     }
 
     @Override
-    public void save(Label label) {
+    public Label save(Label label) {
         List<Label> labels = getAllLabelsInternal();
         label.setId(generateId(labels));
         labels.add(label);
         writeListToJson(labels);
+        return label;
     }
 
     private List<Label> getAllLabelsInternal() {

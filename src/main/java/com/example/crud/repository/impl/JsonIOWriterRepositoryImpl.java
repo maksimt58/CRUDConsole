@@ -59,11 +59,12 @@ public class JsonIOWriterRepositoryImpl implements WriterRepository {
     }
 
     @Override
-    public void save(Writer writer) {
+    public Writer save(Writer writer) {
         List<Writer> writers = getAllWritersInternal();
         writer.setId(generateId(writers));
         writers.add(writer);
         writeListToJson(writers);
+        return writer;
     }
 
     private List<Writer> getAllWritersInternal() {
